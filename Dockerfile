@@ -18,6 +18,6 @@ RUN cpanm -nq App::cpm Carton::Snapshot
 
 RUN cpm install -g --show-build-log-on-failure --cpanfile /tmp/cpanfile
 
-RUN cpan-outdated -p | xargs cpm install -g --show-build-log-on-failure
+RUN cpan-outdated --exclude-core -p | xargs cpm install -g --show-build-log-on-failure
 
 CMD ["/bin/bash"]

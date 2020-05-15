@@ -11,6 +11,8 @@ requires 'Devel::Cover::Report::Coveralls';
 requires 'File::Temp';
 requires 'List::MoreUtils';
 requires 'Module::Build';
+requires 'Perl::Tidy';
+requires 'Perl::Critic';
 requires 'Pod::Coverage::TrustPod';
 requires 'Pod::Readme' if "$]" >= 5.010001;
 requires 'Test2::Bundle::Extended';
